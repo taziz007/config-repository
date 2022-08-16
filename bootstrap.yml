@@ -1,3 +1,10 @@
 spring:
   zipkin:
     base-url: http://127.0.0.1:9411/
+
+eureka:
+ client:
+   service-url:
+    defaultZone: http://127.0.0.1:8761/eureka
+   eureka-service-url-poll-interval-seconds: 15
+ instance.lease-renewal-interval-in-seconds: 15
